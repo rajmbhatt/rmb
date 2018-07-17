@@ -67,6 +67,7 @@
 	<packagereq type="mandatory">lvm2</packagereq>
 	<packagereq type="mandatory">createrepo</packagereq>
 	<packagereq type="mandatory">nvme-cli</packagereq>
+	<packagereq type="mandatory">dos2unix</packagereq>
     </packagelist>
   </group>
 </comps>
