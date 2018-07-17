@@ -1,6 +1,6 @@
 #!/bin/bash -xv
 
-#dos2unix /root/install/sap-app-pas-install-single-hosts.sh
+dos2unix /root/install/sap-standalone-ase-install.sh
 
 chmod 500 /root/install/*
 
