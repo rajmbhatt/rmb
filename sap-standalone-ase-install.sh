@@ -962,9 +962,14 @@ then
 	mv /var/run/dbus/system_bus_socket.bak /var/run/dbus/system_bus_socket
 	else
 	echo "SAP PAS failed to install...exiting"
+	## Copy sapinst logs to Error Bucket Location
+	aws s3 rm s3://${S3_BUCKET}/CFTDeploymentErrorLogs/${SAPPAS_HOSTNAME} --recursive
+	aws s3 sync /tmp/sapinst_instdir s3://${S3_BUCKET}/CFTDeploymentErrorLogs/${SAPPAS_HOSTNAME}/
+	aws s3 sync /root/install s3://${S3_BUCKET}/CFTDeploymentErrorLogs/rootinstalllogs/${SAPPAS_HOSTNAME}/
+	CFTErrorLogs=s3://${S3_BUCKET}/CFTDeploymentErrorLogs/${SAPPAS_HOSTNAME}/
 	#signal the waithandler, 1=Failed
-	/root/install/signalFinalStatus.sh 1 "SAP PAS and DB failed to install...exiting"
-			set_cleanup_inifiles
+	/root/install/signalFinalStatus.sh 1 "SAP PAS and DB failed to install..check the error logs in $CFTErrorLogs Location for more details..exiting"
+	set_cleanup_inifiles
 	exit
 fi
 
