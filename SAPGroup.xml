@@ -1,0 +1,72 @@
+<!DOCTYPE comps PUBLIC "-//Red Hat, Inc.//DTD Comps info//EN" "comps.dtd">
+<comps>
+  <group>
+   <id>sapgroup</id>
+   <default>False</default>
+   <uservisible>True</uservisible>
+   <display_order>1024</display_order>
+   <name>SAP Group</name>
+   <description>SAP Group for Installing OS Packages</description>
+    <packagelist>
+      	<packagereq type="mandatory">glibc</packagereq>
+      	<packagereq type="mandatory">rpm</packagereq>
+      	<packagereq type="mandatory">yum</packagereq>
+	<packagereq type="mandatory">blktrace</packagereq>
+	<packagereq type="mandatory">sysstat</packagereq>
+	<packagereq type="mandatory">dstat</packagereq>
+	<packagereq type="mandatory">iotop</packagereq>
+	<packagereq type="mandatory">iowatcher</packagereq>
+	<packagereq type="mandatory">latencytop</packagereq>
+	<packagereq type="mandatory">latencytop-tui</packagereq>
+	<packagereq type="mandatory">oprofile</packagereq>
+	<packagereq type="mandatory">parfait</packagereq>
+	<packagereq type="mandatory">pcp</packagereq>
+	<packagereq type="mandatory">perf</packagereq>
+	<packagereq type="mandatory">powertop</packagereq>
+	<packagereq type="mandatory">fio</packagereq>
+	<packagereq type="mandatory">hdparm</packagereq>
+	<packagereq type="mandatory">iperf3</packagereq>
+	<packagereq type="mandatory">libpfm</packagereq>
+	<packagereq type="mandatory">oprofile-jit</packagereq>
+	<packagereq type="mandatory">papi</packagereq>
+	<packagereq type="mandatory">sdparm</packagereq>
+	<packagereq type="mandatory">tuned-profiles-cpu-partitioning</packagereq>
+	<packagereq type="mandatory">tuned-utils</packagereq>
+	<packagereq type="mandatory">compat-db47</packagereq>
+	<packagereq type="mandatory">compat-glibc</packagereq>
+	<packagereq type="mandatory">compat-libcap1</packagereq>
+	<packagereq type="mandatory">compat-libf2c-34</packagereq>
+	<packagereq type="mandatory">compat-libgfortran-41</packagereq>
+	<packagereq type="mandatory">compat-libtiff3</packagereq>
+	<packagereq type="mandatory">compat-openldap</packagereq>
+	<packagereq type="mandatory">libpng12</packagereq>
+	<packagereq type="mandatory">openssl098e</packagereq>
+	<packagereq type="mandatory">numactl</packagereq>
+	<packagereq type="mandatory">numad</packagereq>
+	<packagereq type="mandatory">hwloc</packagereq>
+	<packagereq type="mandatory">libhugetlbfs</packagereq>
+	<packagereq type="mandatory">libhugetlbfs-utils</packagereq>
+	<packagereq type="mandatory">autofs</packagereq>
+	<packagereq type="mandatory">cgdcbxd</packagereq>
+	<packagereq type="mandatory">cifs-utils</packagereq>
+	<packagereq type="mandatory">device-mapper-multipath</packagereq>
+	<packagereq type="mandatory">fcoe-utils</packagereq>
+	<packagereq type="mandatory">glusterfs-fuse</packagereq>
+	<packagereq type="mandatory">gssproxy</packagereq>
+	<packagereq type="mandatory">iscsi-initiator-utils</packagereq>
+	<packagereq type="mandatory">lldpad</packagereq>
+	<packagereq type="mandatory">nfs-utils</packagereq>
+	<packagereq type="mandatory">nfs4-acl-tools</packagereq>
+	<packagereq type="mandatory">samba-client</packagereq>
+	<packagereq type="mandatory">targetcli</packagereq>
+	<packagereq type="mandatory">cachefilesd</packagereq>
+	<packagereq type="mandatory">uuidd</packagereq>
+	<packagereq type="mandatory">csh</packagereq>
+	<packagereq type="mandatory">tcsh</packagereq>
+	<packagereq type="mandatory">unzip</packagereq>
+	<packagereq type="mandatory">lvm2</packagereq>
+	<packagereq type="mandatory">createrepo</packagereq>
+	<packagereq type="mandatory">nvme-cli</packagereq>
+    </packagelist>
+  </group>
+</comps>

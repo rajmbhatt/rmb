@@ -1,0 +1,5 @@
+[saprepo]
+name=SAP local repo
+baseurl=file:///srv/sap/repo
+enabled=1 
+gpgcheck=0
